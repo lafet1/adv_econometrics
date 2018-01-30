@@ -94,10 +94,8 @@ gravity_11_1 <- as.tibble(add_column(gravity, res_11) %>% filter(emu == 1) %>%
 
 
 # Exercise 12
-lagged_res <- res_11[-1]
-res_12 <- res_11[-6156]
 
-regr12 <- lm(res_12 ~ lagged_res)
+# check serial correlation again, basically justa a bit of annoying wrangling
 
 
 # Exercise 13
