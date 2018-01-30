@@ -99,7 +99,7 @@ gravity_11_1 <- as.tibble(add_column(gravity, res_11) %>% filter(emu == 1) %>%
 
 
 # Exercise 13
-summary(regr10, vcov = vcovDC)
+summary(regr10, vcov = vcovHC)
 
 
 
